@@ -2,14 +2,14 @@ import pandas as pd
 from os import walk
 
 # Carregar o arquivo CSV  
-csv_file = "/S2DTSD01/shared/BancoCSV/ETENE/Publico/OBSERVATORIO/E.D.A/BACEN/SCR/SCR_UPLOAD/2023/"
+csv_file = ""
 
 #Delimitador do pandas = "sep"
 df = pd.read_csv(csv_file, sep=';', skipinitialspace=True)
 print("Leitura do CSV", df.head())
  
 # Converter e salvar como Parquet  
-parquet_file = "/S2DTSD01/shared/BancoCSV/ETENE/Publico/OBSERVATORIO/E.D.A/BACEN\SCR/SCR_PARQUET/2023/"
+parquet_file = ""
 #df2 = pd.read_parquet(parquet_file)
 #print("Leitura do Parquet", df2.head())
 
